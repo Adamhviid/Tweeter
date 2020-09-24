@@ -3,17 +3,23 @@
     border:solid;
     border-width: 0.5px;
 }
+#submit {
+    margin-left: 80%;
+    margin-bottom: 80px;
+}
 
 #form-container{
     border-width: 0.5px;
     height: 150px;
     padding-top:50px;
 }
-#twit{
-    border-width: 0.5px;
-    border-color: black;
-    border:solid;
-    width: 300px;
+#twitName{
+    width: 100px;
+}
+#twitText {
+    width: 500px;
+    height: 100px;
+    white-space: pre-wrap;
 }
 #displayTwit {
     margin-top: 70px;

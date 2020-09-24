@@ -20,10 +20,11 @@ public class TwitController {
 
     @PostMapping("/postTwit")
     public String postTwit(WebRequest formData) {
-        Twit twitName = new Twit(formData.getParameter("twitName"));
-        Twit twitText = new Twit(formData.getParameter("twitText"));
-        displayTwit.setText(twitText.toString());
-        displayTwit.setName(twitName.toString());
+        String twitName = new String(formData.getParameter("twitName"));
+        String twitText = new String(formData.getParameter("twitText"));
+        Twit setDisplayTwit = new Twit(twitName,twitText);
+        displayTwit = setDisplayTwit;
+
         return "redirect:/";
     }
 }

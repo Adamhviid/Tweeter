@@ -21,11 +21,13 @@ public class Twit {
         return name;
     }
 
-    public void setText(String text) {
+    public String setText(String text) {
         this.text = text;
+        return text;
     }
-    public void setName(String name) {
+    public String setName(String name) {
         this.name = name;
+        return name;
     }
 
 
