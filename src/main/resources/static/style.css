@@ -3,10 +3,6 @@
     border:solid;
     border-width: 0.5px;
 }
-#submit {
-    margin-left: 80%;
-    margin-bottom: 80px;
-}
 
 #form-container{
     border-width: 0.5px;
@@ -14,7 +10,7 @@
     padding-top:50px;
 }
 #twitName{
-    width: 100px;
+    width: 150px;
 }
 #twitText {
     width: 500px;
@@ -22,7 +18,7 @@
     white-space: pre-wrap;
 }
 #displayTwit {
-    margin-top: 70px;
+    margin-top: 155px;
     height: auto;
     border:solid;
     border-width: 0.5px;
