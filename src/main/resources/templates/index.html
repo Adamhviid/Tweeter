@@ -12,24 +12,24 @@
 			<div class="col">
 				<div id="form-container">
 						<form id="registration-form" action="/postTwit" method="post">
-							<label for="twitName">Twit</label>
-							<input type="text" id="twitName" name="twitName"><br><br>
+							<table>
+								<tr>
+									<td><label for="twitName">Your Name</label>
+									<td><input type="text" id="twitName" name="twitName">
+								<tr>
+									<td><label for="twitText">Your Twit</label>
+									<td><input type="text" id="twitText" name="twitText"><br><br>
+							</table>
+								<input type="submit" id="submit" value="Submit">
 						</form>
-
-						<form id="registration-formText" action="/postTwit" method="post">
-							<label for="twitText">Twit</label>
-							<input type="text" id="twitText" name="twitText"><br><br>
-							<input type="submit" value="Submit">
-						</form>
-
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
 				<div id="displayTwit">
-					<p th:text="${displayTwit.getName()}"></p>
-					<p th:text="${displayTwit.getText()}"></p>
+					<p th:text="${displayTwit.getName().toString()}"></p>
+					<p th:text="${displayTwit.getText().toString()}"></p>
 				</div>
 			</div>
 		</div>
