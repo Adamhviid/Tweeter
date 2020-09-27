@@ -24,8 +24,8 @@ public class TwitController {
 
     @PostMapping("/postTwit")
     public String postTwit(WebRequest formData) {
-        String twitName = new String(formData.getParameter("twitName"));
-        String twitText = new String(formData.getParameter("twitText"));
+        String twitName = formData.getParameter("twitName");
+        String twitText = formData.getParameter("twitText");
         Twit setDisplayTwit = new Twit(twitName,twitText);
         displayTwit = setDisplayTwit;
         publicTwitsList.add(displayTwit);
@@ -34,6 +34,6 @@ public class TwitController {
 
     @GetMapping("/public")
     public String publicTwits() {
-
+        return "";
     }
 }

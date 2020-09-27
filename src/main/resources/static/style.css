@@ -10,12 +10,11 @@
     padding-top:50px;
 }
 #twitName{
-    width: 150px;
+    width: 200px;
 }
 #twitText {
     width: 500px;
-    height: 100px;
-    white-space: pre-wrap;
+    height: fit-content;
 }
 #displayTwit {
     margin-top: 155px;
